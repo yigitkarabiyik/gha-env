@@ -12,7 +12,7 @@ jobs:
   test:
     #environment: testing
     env:
-      MONGODB_CLUSTER_ADDRESS: cluster_address
+      MONGODB_CLUSTER_ADDRESS: ${{ secrets.MONGODB_CLUSTER_ADDRESS}}
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: ${{ secrets.MONGODB_MONGODB_PASSWORD }}
       PORT: 8080
